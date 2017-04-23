@@ -1,0 +1,25 @@
+{
+  "name": "new-hire-bot",
+  "version": "0.0.1",
+  "description": "Bot that introduces new hires to the existing employees",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdamjanic7/new-hire-bot.git"
+  },
+  "author": "Misa Damjanic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdamjanic7/new-hire-bot/issues"
+  },
+  "homepage": "https://github.com/mdamjanic7/new-hire-bot#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "pg": "^6.1.5",
+    "winston": "^2.3.1"
+  }
+}
