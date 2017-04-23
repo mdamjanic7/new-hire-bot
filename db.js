@@ -1,13 +1,15 @@
 var pg = require('pg');
 
+var constants = require('./constants.js');
+
 pg.defaults.ssl = true;
 
 var config = {
-  user: process.env.POSTGRES_USER || '', //env var: PGUSER
-  database: process.env.POSTGRES_DATABASE || '', //env var: PGDATABASE
-  password: process.env.POSTGRES_PASSWORD || '', //env var: PGPASSWORD
-  host: process.env.POSTGRES_HOST || '', // Server hosting the postgres database
-  port: 5432, //env var: PGPORT
+  user: constants.POSTGRES_USER,
+  database: constants.POSTGRES_DATABASE,
+  password: constants.POSTGRES_PASSWORD,
+  host: constants.POSTGRES_HOST,
+  port: 5432,
   max: 10, // max number of clients in the pool
   idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
 };
